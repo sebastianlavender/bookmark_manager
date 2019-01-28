@@ -9,8 +9,8 @@ feature 'Bookmark page' do
   scenario 'It should load the bookmarks page' do
     visit '/'
     click_button 'View bookmarks'
-    expect(page).to have_content "Your bookmarks:"
-    expect(page).to have_content "Google"
-    expect(page).to have_content "Yahoo"
+    expect(page).to have_content "http://www.makersacademy.com"
+    expect(page).to have_content "http://www.google.com"
+    expect(page).to have_content "http://www.destroyallsoftware.com"
   end
 end

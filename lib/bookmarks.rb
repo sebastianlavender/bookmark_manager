@@ -1,9 +1,11 @@
+require 'pg'
+
 class Bookmarks
 
-  attr_reader :all
-
-  def initialize
-    @all = ["Google", "Yahoo"]
+  def all
+    con = PG.connect :dbname => 'bookmark_manager', :user => 'sebastianlavender'
+    rs = con.exec "SELECT * FROM bookmarks"
+    rs.map { |row| row['url'] }.join("\n")
   end
 
 end
