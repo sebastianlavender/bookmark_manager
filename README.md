@@ -1,11 +1,11 @@
 # bookmark_manager
 
-#user stories
+# user stories
 
-As a user of the website
-So that I can easily navigate to my favourite websites
-I want to see a list of bookmarks
+As a user of the website  
+So that I can easily navigate to my favourite websites  
+I want to see a list of bookmarks  
 
-#domain model
+# domain model
 
 ![Screenshot](domain_model.jpg)
